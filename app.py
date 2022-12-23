@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-openai.api_key = openai_api_key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Inicializar el modelo GPT-3 de OpenAI y configurar la API
 model_engine = "text-davinci-002"
