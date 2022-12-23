@@ -1,10 +1,6 @@
 import openai
 import streamlit as st
 
-# Leer la clave de la API de OpenAI desde un archivo externo
-with open("openai_api_key.txt", "r") as f:
-    openai_api_key = f.read().strip()
-
 openai.api_key = openai_api_key
 
 # Inicializar el modelo GPT-3 de OpenAI y configurar la API
