@@ -5,7 +5,7 @@ import streamlit as st
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Inicializar el modelo GPT-3 de OpenAI y configurar la API
-model_engine = "text-davinci-002"
+model_engine = "text-davinci-003"
 
 # Crear una función para enviar una solicitud de compleción de texto al modelo GPT-3 y obtener una respuesta
 def get_response(prompt):
